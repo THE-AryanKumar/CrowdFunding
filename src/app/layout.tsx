@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${alexBrush.variable} ${montserrat.variable} overflow-hidden relative`}
+        className={`${alexBrush.variable} ${montserrat.variable}  relative`}
       >
         {children}
       </body>

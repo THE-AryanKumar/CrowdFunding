@@ -4,7 +4,6 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import DevImg from "./DevImg";
-import Banner from "../images/batsman.png";
 import HeroImg from "../images/CROWD.svg";
 import HeroImg2 from "../images/Funding.svg";
 import HeroImg3 from "../images/colorball.png";
@@ -15,14 +14,14 @@ import {
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../variants";
-import Badge from "./Badge";
 import { RiBriefcase4Fill } from "react-icons/ri";
 import { RiTodoFill } from "react-icons/ri";
 import { RiTeamFill } from "react-icons/ri";
 import { RiFootballFill } from "react-icons/ri";
 import { RiSendPlaneFill } from "react-icons/ri";
-import { RiBasketballFill } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from 'react';
+import Badge from "./Badge";
 import Socials from "./Socials";
 
 const locationSequence = [
@@ -44,13 +43,21 @@ interface DevImgProps {
 }
 
 const Hero = () => {
+  const [showBackground, setShowBackground] = useState(false);
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowBackground(true);
+    }, 1000);
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
     <section className="h-[80vh] xl:h-[850px]" id="home">
-      {/* <div
-      // className="relative h-screen bg-cover bg-center"
-      // style={{ backgroundImage: "url(/stadium.jpg)" }}
-      > */}
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+      <motion.div
+      className=" h-screen bg-cover bg-center transition-opacity duration-3000 ease-in-out"
+       style={{ backgroundImage: showBackground ? "url(/bg_landing.png)" : "none" }}
+      >
+      <div className="top-0 left-0 w-full h-full flex items-center justify-center transform translate-y-[-120px] md:translate-y-0">
         <div className="container mx-auto h-full flex justify-center items-center xl:justify-start">
           <div className="bg-blue-500 bg-opacity-0 h-full flex flex-col justify-center items-center xl:items-start z-20 pt-12 relative md:right-[100px] md:top-[-80px]">
             <MouseParallaxContainer
@@ -68,7 +75,7 @@ const Hero = () => {
                   variants={fadeIn({ direction: "up", delay: 0.4 })}
                   initial="hidden"
                   animate="show"
-                  className="w-[300px] h-[101.37px] xl:w-[725px] xl:h-[244.97px]"
+                  className="w-[300px] h-[101.37px] xl:w-[725px] xl:h-[244.97px] select-none "
                 >
                   <Image src={HeroImg} fill alt="" className="object-cover" />
                 </motion.div>
@@ -83,7 +90,7 @@ const Hero = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.3 }}
-                  className="w-[300px] h-[101.37px] xl:w-[625px] xl:h-[244.97px]"
+                  className="w-[300px] h-[101.37px] xl:w-[625px] xl:h-[244.97px] select-none"
                 >
                   <Image
                     src={HeroImg2}
@@ -103,7 +110,7 @@ const Hero = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.3 }}
-                  className="w-[150px] h-[100px] xl:w-[248px] xl:h-[200px] relative right-[30px] top-[-10px]"
+                  className="w-[150px] h-[100px] xl:w-[248px] xl:h-[200px] relative right-[30px] top-[-10px] select-none"
                 >
                   <Image
                     src={HeroImg3}
@@ -162,7 +169,7 @@ const Hero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="hidden xl:flex relative right-[40px] top-[-40px]"
+            className="hidden xl:flex relative right-[40px] top-[-40px] select-none"
           >
             <Badge
               containerStyles="absolute top-[24%] -left-[4rem]"
@@ -185,7 +192,7 @@ const Hero = () => {
               endCountText="+"
               badgeText="Team"
             />
-            <div className="bg-hero_shapes2_light dark:bg-hero_shapes2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+            <div className="bg-hero_shapes2_light dark:bg-hero_shapes2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2 user-select-none"></div>
             <DevImg
               containerStyles="bg-hero_shapes w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
               imgSrc="/batsman.png"
@@ -193,7 +200,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      {/* </div> */}
+      </motion.div>
     </section>
   );
 };

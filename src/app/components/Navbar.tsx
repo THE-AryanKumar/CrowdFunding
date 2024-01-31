@@ -30,7 +30,7 @@ const Navbar = () => {
       // viewport={{ once: false, amount: 0.3 }}
       className="w-full bg-white/70 h-20 shadow-md sticky top-0 backdrop-blur-2xl transition-colors z-50"
     >
-      <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full">
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full select-none">
         <Logo className="" />
         <div className="hidden md:inline-flex items-center gap-7 text-gray-900 hover:text-black duration-200">
           {navigation.map((item) => (
