@@ -8,6 +8,15 @@ import { GiWeightLiftingUp } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../variants";
 
+interface FadeInProps {
+  delay: number;
+}
+
+const fadeIn2 = ({ delay }: FadeInProps) => ({
+  hidden: { opacity: 0, y: 20 }, 
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, delay } }, 
+});
+
 const Services = () => {
   return (
     <section className="services transform translate-y-[20px] md:translate-y-0">
@@ -16,7 +25,8 @@ const Services = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="bg-black text-white bg-cover bg-no-repeat max-w-[1450px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[80px] px-6 xl:px-0 relative flex items-center xl:items-start -z-10"
+        className="text-white bg-cover bg-no-repeat max-w-[1450px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[80px] px-6 xl:px-0 relative flex items-center xl:items-start -z-10"
+        style={{ backgroundImage: 'url(/running.jpg)' }}
       >
         <div className="container mx-auto">
           <div className="flex items-center flex-col xl:flex-row xl:mb-[140px]">
@@ -34,14 +44,14 @@ const Services = () => {
       <div className="container mx-auto mt-8 xl:-mt-[100px]">
         <div className="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
           <motion.div
-            variants={fadeIn({ direction: "up", delay: 0.4 })}
+            variants={fadeIn2({ delay: 0.4 })}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="bg-white p-[30px] rounded-[10px] shadow-2xl min-h-[288px] max-w-[1150px] mx-auto flex flex-col items-center text-center"
           >
             <div className="mb-[15px]">
-              <IoNutrition size={40} color="black" />
+              <IoNutrition size={40} color="black" style={{ color: '#d97706' }} />
             </div>
             <h3 className="h3 mb-[10px]">General Sportsman</h3>
             <p className="font-light leading-normal max-w-[360px]">
@@ -49,14 +59,14 @@ const Services = () => {
             </p>
           </motion.div>
           <motion.div
-            variants={fadeIn({ direction: "up", delay: 0.8 })}
+            variants={fadeIn2({ delay: 0.8 })}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="bg-white p-[30px] rounded-[10px] shadow-2xl min-h-[288px] max-w-[1150px] mx-auto flex flex-col items-center text-center"
           >
             <div className="mb-[15px]">
-              <RiRefund2Fill size={40} color="black" />
+              <RiRefund2Fill size={40} color="black" style={{ color: '#d97706' }} />
             </div>
             <h3 className="h3 mb-[10px]">General Sportsman</h3>
             <p className="font-light leading-normal max-w-[360px]">
@@ -64,14 +74,14 @@ const Services = () => {
             </p>
           </motion.div>
           <motion.div
-            variants={fadeIn({ direction: "up", delay: 1 })}
+            variants={fadeIn2({ delay: 1 })}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="bg-white p-[30px] rounded-[10px] shadow-2xl min-h-[288px] max-w-[1150px] mx-auto flex flex-col items-center text-center"
           >
             <div className="mb-[15px]">
-              <IoFastFood size={40} color="black" />
+              <IoFastFood size={40} color="black" style={{ color: '#d97706' }} />
             </div>
             <h3 className="h3 mb-[10px]">General Sportsman</h3>
             <p className="font-light leading-normal max-w-[360px]">
@@ -79,14 +89,14 @@ const Services = () => {
             </p>
           </motion.div>
           <motion.div
-            variants={fadeIn({ direction: "up", delay: 1.2 })}
+            variants={fadeIn2({ delay: 1.2 })}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="bg-white p-[30px] rounded-[10px] shadow-2xl min-h-[288px] max-w-[1150px] mx-auto flex flex-col items-center text-center"
           >
             <div className="mb-[15px]">
-              <GiWeightLiftingUp size={40} color="black" />
+              <GiWeightLiftingUp size={40} color="black" style={{ color: '#d97706' }} />
             </div>
             <h3 className="h3 mb-[10px]">General Sportsman</h3>
             <p className="font-light leading-normal max-w-[360px]">
