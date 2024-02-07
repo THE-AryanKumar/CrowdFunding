@@ -19,12 +19,12 @@ const fadeIn2 = ({ delay }: FadeInProps) => ({
 
 const Services = () => {
   return (
-    <section className="services transform translate-y-[20px] md:translate-y-0">
+    <section className="services mt-2 mb-28 items-center justify-center transform translate-y-[20px] md:translate-y-0">
       <motion.div
         variants={fadeIn({ direction: "up", delay: 0.2 })}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         className="text-white bg-cover bg-no-repeat max-w-[1450px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[80px] px-6 xl:px-0 relative flex items-center xl:items-start -z-10"
         style={{ backgroundImage: 'url(/running.jpg)' }}
       >

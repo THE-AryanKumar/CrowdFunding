@@ -83,6 +83,10 @@
   @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
 }
 
+.h1{
+  @apply text-[64px] lg:text-[84px] leading-none
+}
+
 .h2{
   @apply text-[30px] xl:text-[44px] font-semibold capitalize tracking-[0.44px];
 }

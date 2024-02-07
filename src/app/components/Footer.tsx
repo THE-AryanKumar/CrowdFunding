@@ -9,7 +9,7 @@ import { RiYoutubeFill } from "react-icons/ri";
 const Footer = () => {
   return (
     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800 overflow-x-hidden">
-      <div className="w-full bottom-0 bg-gradient-to-l from-[#ec830ce6] to-brown-800 text-white py-30px border-tl-125px text-sm leading-20px min-h-screen flex items-center justify-center bg-white">
+      <div className="w-full bottom-0 bg-gradient-to-l from-[#ec830ce6] to-brown-800 text-white py-30px border-tl-125px text-sm leading-20px min-h-screen flex items-center justify-center bg-white rounded-tr-[200px]">
         <div className="md:w-2/3 w-full px-4 text-black flex flex-col">
           <div className="w-full text-7xl font-bold">
             <h1 className="w-full md:w-2/3">

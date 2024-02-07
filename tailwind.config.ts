@@ -10,6 +10,16 @@ const config = {
 	],
   prefix: "",
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '960px',
+      xl: '1200px',
+    },
+    fontFamily: {
+      primary: 'DM Serif Display',
+      secondary: 'Jost',
+    },
     container: {
       center: true,
       padding: "2rem",
