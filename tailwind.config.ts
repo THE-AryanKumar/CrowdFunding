@@ -19,6 +19,8 @@ const config = {
     fontFamily: {
       primary: 'DM Serif Display',
       secondary: 'Jost',
+      tertiary: 'Rozha One',
+      quaternary: 'Oswald'
     },
     container: {
       center: true,
@@ -87,6 +89,8 @@ const config = {
         hero_shapes: 'url(/shape-1.svg)',
         hero_shapes2_light: 'url(/shape-2-light.svg)',
         hero_shapes2_dark: 'url(/shape-2-dark.svg)',
+        interview: 'url(/src/app/images/sachin.jpg)',
+        about: 'url(/src/app/images/stadium.jpg)'
       },
     },
   },

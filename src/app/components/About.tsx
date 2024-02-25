@@ -18,7 +18,7 @@ const About = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.1 }}
-        className=" relative section bg-black/10 w-[85%] mx-auto rounded-tr-[50px] rounded-tl-[50px] rounded-bl-[50px] rounded-br-[50px] p-8 z-20"
+        className=" relative section bg-black/30 w-[85%] mx-auto rounded-tr-[50px] rounded-tl-[50px] rounded-bl-[50px] rounded-br-[50px] p-8 z-20"
       >
         <div className="container mx-auto">
           <div className="flex flex-col xl:flex-row gap-24">
@@ -57,7 +57,7 @@ const About = () => {
           </div>
         </div>
       </motion.div>
-      <div className="relative xl:flex -top-[90px] left-[28px] z-10">
+      <div className="relative xl:flex -top-[90px] left-[48px] z-10">
         <Image
           src={pattern}
           width={320}

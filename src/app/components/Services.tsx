@@ -13,20 +13,26 @@ interface FadeInProps {
 }
 
 const fadeIn2 = ({ delay }: FadeInProps) => ({
-  hidden: { opacity: 0, y: 20 }, 
-  show: { opacity: 1, y: 0, transition: { duration: 0.8, delay } }, 
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, delay } },
 });
 
 const Services = () => {
+  const fadeInAnimation = fadeIn({ direction: "up", delay: 0.2 });
   return (
-    <section className="services mt-2 mb-28 items-center justify-center transform translate-y-[20px] md:translate-y-0">
+    <section className="services -mt-24 mb-28 items-center justify-center transform translate-y-[20px] md:translate-y-0">
       <motion.div
-        variants={fadeIn({ direction: "up", delay: 0.2 })}
+        // initial={{opacity:0, y:'100%'}}
+        // animate={{opacity:1, y:0}}
+        // exit={{opacity:0,y:'100%'}}
+        // transition={transitions1}
+        variants={fadeInAnimation}
         initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.1 }}
+        animate="show"
+        exit="hidden"
+        transition={{ duration: 1.5, ease: "easeInOut" }}
         className="text-white bg-cover bg-no-repeat max-w-[1450px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[80px] px-6 xl:px-0 relative flex items-center xl:items-start -z-10"
-        style={{ backgroundImage: 'url(/running.jpg)' }}
+        style={{ backgroundImage: "url(/running.jpg)" }}
       >
         <div className="container mx-auto">
           <div className="flex items-center flex-col xl:flex-row xl:mb-[140px]">
@@ -51,7 +57,11 @@ const Services = () => {
             className="bg-white p-[30px] rounded-[10px] shadow-2xl min-h-[288px] max-w-[1150px] mx-auto flex flex-col items-center text-center"
           >
             <div className="mb-[15px]">
-              <IoNutrition size={40} color="black" style={{ color: '#d97706' }} />
+              <IoNutrition
+                size={40}
+                color="black"
+                style={{ color: "#d97706" }}
+              />
             </div>
             <h3 className="h3 mb-[10px]">General Sportsman</h3>
             <p className="font-light leading-normal max-w-[360px]">
@@ -66,7 +76,11 @@ const Services = () => {
             className="bg-white p-[30px] rounded-[10px] shadow-2xl min-h-[288px] max-w-[1150px] mx-auto flex flex-col items-center text-center"
           >
             <div className="mb-[15px]">
-              <RiRefund2Fill size={40} color="black" style={{ color: '#d97706' }} />
+              <RiRefund2Fill
+                size={40}
+                color="black"
+                style={{ color: "#d97706" }}
+              />
             </div>
             <h3 className="h3 mb-[10px]">General Sportsman</h3>
             <p className="font-light leading-normal max-w-[360px]">
@@ -81,7 +95,11 @@ const Services = () => {
             className="bg-white p-[30px] rounded-[10px] shadow-2xl min-h-[288px] max-w-[1150px] mx-auto flex flex-col items-center text-center"
           >
             <div className="mb-[15px]">
-              <IoFastFood size={40} color="black" style={{ color: '#d97706' }} />
+              <IoFastFood
+                size={40}
+                color="black"
+                style={{ color: "#d97706" }}
+              />
             </div>
             <h3 className="h3 mb-[10px]">General Sportsman</h3>
             <p className="font-light leading-normal max-w-[360px]">
@@ -96,7 +114,11 @@ const Services = () => {
             className="bg-white p-[30px] rounded-[10px] shadow-2xl min-h-[288px] max-w-[1150px] mx-auto flex flex-col items-center text-center"
           >
             <div className="mb-[15px]">
-              <GiWeightLiftingUp size={40} color="black" style={{ color: '#d97706' }} />
+              <GiWeightLiftingUp
+                size={40}
+                color="black"
+                style={{ color: "#d97706" }}
+              />
             </div>
             <h3 className="h3 mb-[10px]">General Sportsman</h3>
             <p className="font-light leading-normal max-w-[360px]">

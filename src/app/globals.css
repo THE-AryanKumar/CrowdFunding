@@ -102,3 +102,13 @@
 .section {
   @apply py-12 xl:py-[150px];
 }
+
+/* .modal-video-movie-wrap iframe {
+  width: 84vw;
+  height: 50vw;
+  bottom: 180px;
+}
+
+.modal-video-movie-wrap {
+  margin-top: 500px; 
+} */
