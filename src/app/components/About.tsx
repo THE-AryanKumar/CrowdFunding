@@ -57,7 +57,7 @@ const About = () => {
           </div>
         </div>
       </motion.div>
-      <div className="relative xl:flex -top-[90px] left-[48px] z-10">
+      <div className="relative xl:flex -top-[90px] left-[20px] z-10">
         <Image
           src={pattern}
           width={320}

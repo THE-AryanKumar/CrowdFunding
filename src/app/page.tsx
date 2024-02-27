@@ -7,7 +7,7 @@ import Stats from "./components/Stats";
 import About from "./components/About";
 import Faq from "./components/Faq";
 import Interview from "./components/Interview";
-// import Gallery from "./components/Gallery";
+import Gallery from "./components/Gallery";
 
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <Services />
       <Faq />
       <Stats />
-      {/* <Gallery /> */}
+      <Gallery />
       <Interview />
       <Footer />
     </div>

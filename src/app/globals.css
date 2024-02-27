@@ -103,6 +103,10 @@
   @apply py-12 xl:py-[150px];
 }
 
+.btn-lg {
+  @apply h-[67px];
+}
+
 /* .modal-video-movie-wrap iframe {
   width: 84vw;
   height: 50vw;
