@@ -40,9 +40,7 @@ const Services = () => {
               Our best services
             </h2>
             <p className="text-white flex-1 text-center xl:text-left max-w-2xl xl:max-w-none">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              excepturi eum consequuntur repellendus incidunt corporis
-              perspiciatis nulla ipsum officiis suscipit!
+            Elevating dreams through unparalleled support
             </p>
           </div>
         </div>
@@ -63,9 +61,9 @@ const Services = () => {
                 style={{ color: "#d97706" }}
               />
             </div>
-            <h3 className="h3 mb-[10px]">General Sportsman</h3>
+            <h3 className="h3 mb-[10px]">Gear and Equipments</h3>
             <p className="font-light leading-normal max-w-[360px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Fueling Your Victory: Nourishing Excellence, Beating the Competition in Every Bite!
             </p>
           </motion.div>
           <motion.div
@@ -82,9 +80,9 @@ const Services = () => {
                 style={{ color: "#d97706" }}
               />
             </div>
-            <h3 className="h3 mb-[10px]">General Sportsman</h3>
+            <h3 className="h3 mb-[10px]">Travel and Compete</h3>
             <p className="font-light leading-normal max-w-[360px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Fuel Dreams, Travel Far: Your Journey to Victory Starts with Us!
             </p>
           </motion.div>
           <motion.div
@@ -101,9 +99,9 @@ const Services = () => {
                 style={{ color: "#d97706" }}
               />
             </div>
-            <h3 className="h3 mb-[10px]">General Sportsman</h3>
+            <h3 className="h3 mb-[10px]">Game Development</h3>
             <p className="font-light leading-normal max-w-[360px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Turn your game-changing ideas into reality! Level the playing field with our funding platform – where dreams spawn and innovation dominates
             </p>
           </motion.div>
           <motion.div
@@ -120,9 +118,9 @@ const Services = () => {
                 style={{ color: "#d97706" }}
               />
             </div>
-            <h3 className="h3 mb-[10px]">General Sportsman</h3>
+            <h3 className="h3 mb-[10px]">Training & Nutrition</h3>
             <p className="font-light leading-normal max-w-[360px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Fueling Dreams, One Goal at a Time: Elevate Your Game with our Cutting-Edge Training Fundraising Services!
             </p>
           </motion.div>
         </div>

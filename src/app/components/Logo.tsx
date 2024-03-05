@@ -32,7 +32,7 @@ const Logo: React.FC<LogoProps> = ({ title, className }: LogoProps) => {
         <Image alt="logo image" src={LogoImage} width={120} height={100} />
         {windowWidth > 610 && (
           <h1 className="text-3xl font-extrabold uppercase ml-2 w-16 md:w-32 lg:w-48 hover:text-black/80 transition-transform">
-            {title || "Crowd."}&trade; 
+            {title || "Athlete Backer"}  
           </h1>
         )}
       </div>

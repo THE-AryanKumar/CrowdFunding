@@ -24,12 +24,17 @@ const Footer = () => {
           </div>
           <div className="flex mt-8 flex-col md:flex-row md:justify-between">
             <p className="w-full md:w-2/3 text-gray-800">
-              To ensure that all Wikipedia content is verifiable, anyone may
-              question an uncited claim. If your work has been tagged
+              Athlete Backer has become a trusted leader in online fundraising since
+              2010. That’s why Athlete Backer is the top platform of choice to start a
+              fundraiser than any other fundraising site. Our Trust & Safety
+              team is dedicated to protecting organizers and donors so you can
+              safely start a fundraiser or donate to a cause you care about.
+              Learn more about our Athlete Backer Giving Guarantee and find answers to
+              common fundraising questions.
             </p>
             <div className="w-44 pt-6 md:pt-0">
               <a className="bg-red-500 hover:bg-black hover:text-white justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
-                Contact US
+                Contact Us
               </a>
             </div>
           </div>
@@ -64,7 +69,7 @@ const Footer = () => {
             </div>
             <hr className="border-gray-600" />
             <p className="w-full text-center my-12 text-gray-600">
-              Copyright © 2020 Besnik Creative
+              Copyright © 2024 Athlete Backer
             </p>
             <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
               <li>

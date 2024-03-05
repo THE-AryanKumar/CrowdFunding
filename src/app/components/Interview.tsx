@@ -26,7 +26,7 @@ const Interview = () => {
         <div className="flex flex-col justify-center h-full">
           <div className="flex flex-col items-start max-w-[880px]">
             <h3 className="text-white text-[40px] lg:text-[60px] leading-[1.1] font-tertiary -tracking-[1.5px] capitalize mb-8">
-              "Lorem ipsum dolor, sit amet elit. Nam, nihil!"
+              "Enjoy the game and chase your dreams. Dreams do come true!"
             </h3>
             <div>
               <div
@@ -48,8 +48,8 @@ const Interview = () => {
             <ModalVideo
               channel="youtube"
               // autoplay
-              isOpen={isOpen}
-              videoId="uJMCNJP2ipI"
+              isOpen={isOpen }
+              videoId="v6Rz4pgR9UQ"
               onClose={() => setIsOpen(false)}
             />
           </div>

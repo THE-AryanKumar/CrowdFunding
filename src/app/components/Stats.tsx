@@ -28,61 +28,61 @@ const Stats = () => {
             {/* {counterOn && ( */}
             <CountUp
               start={0}
-              end={2}
+              end={3}
               duration={2}
               delay={0}
               className="h1 font-primary text-[#d97706]"
             />
             {/* )} */}
             <span className="text-[70px]" style={{ color: "#d97706" }}>
-              +
+              K+
             </span>
-            <p>Years Of Experience</p>
+            <p>Projects funded</p>
+          </div>
+          <div className="stats__item text-center xl:border-r xl:border-[#cda274]">
+           
+            <CountUp
+              start={0}
+              end={2024}
+              duration={2}
+              delay={0}
+              className="h1 font-primary text-[#d97706]"
+            />
+            
+            <span className="text-[70px]" style={{ color: "#d97706" }}>
+              
+            </span>
+            <p>Since</p>
           </div>
           <div className="stats__item text-center xl:border-r xl:border-[#cda274]">
             {/* {counterOn && ( */}
             <CountUp
               start={0}
-              end={65}
+              end={8.7}
               duration={2}
               delay={0}
               className="h1 font-primary text-[#d97706]"
             />
             {/* )} */}
             <span className="text-[70px]" style={{ color: "#d97706" }}>
-              +
+              K+
             </span>
-            <p>Project Completed</p>
-          </div>
-          <div className="stats__item text-center xl:border-r xl:border-[#cda274]">
-            {/* {counterOn && ( */}
-            <CountUp
-              start={0}
-              end={150}
-              duration={2}
-              delay={0}
-              className="h1 font-primary text-[#d97706]"
-            />
-            {/* )} */}
-            <span className="text-[70px]" style={{ color: "#d97706" }}>
-              +
-            </span>
-            <p>Activities</p>
+            <p>pledges</p>
           </div>
           <div className="stats__item text-center">
             {/* {counterOn && ( */}
             <CountUp
               start={0}
-              end={85}
+              end={5 }
               duration={2}
               delay={0}
               className="h1 font-primary text-[#d97706]"
             />
             {/* )} */}
             <span className="text-[70px]" style={{ color: "#d97706" }}>
-              k
+              M+
             </span>
-            <p>Customer</p>
+            <p>Towards creative work</p>
           </div>
         </div>
       </div>

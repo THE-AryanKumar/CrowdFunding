@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -40,10 +40,16 @@ const About = () => {
                 </p>
                 <hr className="mb-8 opacity-5" />
                 <p className="mb-8">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Blanditiis iusto atque natus doloremque totam omnis! <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nihil, praesentium.
+                  Welcome to Athlete Backer, where dreams meet support in the
+                  realm of sports, esports, and game development. As passionate
+                  advocates, we offer diverse crowdfunding opportunities,
+                  including open funding, reward-based campaigns, and
+                  equity-based initiatives. Our platform is a haven for
+                  athletes, esports enthusiasts, and game developers, fostering
+                  a community that believes in the power of collective impact.
+                  Join us on this journey, where aspirations take flight, and
+                  together, we redefine the future of sports, esports, and
+                  gaming.
                 </p>
               </div>
               <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">

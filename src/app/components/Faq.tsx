@@ -4,7 +4,7 @@ import sachin from "../../../public/sachin.jpg";
 const Faq = () => {
   return (
     <div className="flex flex-col sm:flex-row bg-white h-full mt-28">
-      <div className="bg-[#cda274] w-full sm:w-1/2 h-[50vh] sm:h-screen bg-center bg-no-repeat relative">
+      <div className="w-full sm:w-1/2 h-[50vh] sm:h-screen bg-center bg-no-repeat relative">
         <span className="relative h2 font-medium lg:font-extrabold mb-3 text-7xl text-black opacity-60 lg:text-9xl sm:text-9xl top-[40px] transform -translate-x-1/2 -translate-y-1/2 lg:left-[180px] sm:left-[40px] z-10 lg:transform-none">
           Work
         </span>
